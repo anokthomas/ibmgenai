@@ -9,10 +9,8 @@ st.set_page_config(
     layout="centered",
 )
 
-# --- Hardcoded API Key (Not Recommended for Security Reasons) ---
-# ⚠️ IMPORTANT: Replace "YOUR_API_KEY_HERE" with your actual Gemini API key.
-# Do NOT share this code publicly with the key in it.
-api_key = "AIzaSyAntBQpKkQGGm5EZiPyveKP4ZeV1V104MI"
+
+api_key = "YOUR_API_KEY_HERE"
 
 
 # --- Function to call Gemini API ---
@@ -23,7 +21,7 @@ def generate_content_with_gemini(api_key, post_description, tone, platform="Inst
     try:
         genai.configure(api_key=api_key)
         
-        # Crafting the detailed prompt
+    
         prompt = f"""
         You are an expert social media manager and content creator specializing in {platform}.
         Your task is to generate creative and engaging content based on a user's description.
