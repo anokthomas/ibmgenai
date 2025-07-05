@@ -65,4 +65,4 @@ streamlit run app.py
 
 ---
 
-*Built as part of a Gen AI project at VIT Chennai*
+*Built as part of a Gen AI project *
